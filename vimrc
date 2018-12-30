@@ -50,7 +50,7 @@ autocmd BufReadPost *
     \   exe "normal! g`\"" |
     \ endif
 " Remember info about open buffers on close
-set viminfo^=% 
+set viminfo^=%
 set shortmess=atI
 set selection=inclusive
 set selectmode=mouse,key
@@ -62,3 +62,8 @@ set noundofile
 set noswapfile
 set autoread
 set confirm
+"ConqueGdb
+let g:ConqueGdb_SrcSplit='above'
+let g:ConqueGdb_SaveHistory=1
+let g:ConqueGdb_Leader=','          ",r run ,c continue ,n next ,s step ,b breakpoint ,d delete ,f finish ,t backtrace
+let g:ConqueTerm_CloseOnEnd=1
