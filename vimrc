@@ -5,12 +5,14 @@ set softtabstop=4     "number of spaces in tab when editing
 set expandtab         "tabs are spaces
 set showcmd           "show command in bottorm bar
 set cursorline        "highlight current line
+set cursorcolumn
 filetype indent on
 set wildmenu
 set lazyredraw
 set showmatch         "highlight matching
 set incsearch
 set hlsearch
+set ignorecase        "ignore case in search
 set guifont=Monospace\ 14
 nnoremap <lead><space> :nolhsearch<CR>
 set foldenable
@@ -49,3 +51,14 @@ autocmd BufReadPost *
     \ endif
 " Remember info about open buffers on close
 set viminfo^=% 
+set shortmess=atI
+set selection=inclusive
+set selectmode=mouse,key
+set title
+set completeopt=longest,menu
+set wildignore=**.o,*~,.swp,*.bak,*pyc,*.class
+set nobackup
+set noundofile
+set noswapfile
+set autoread
+set confirm
