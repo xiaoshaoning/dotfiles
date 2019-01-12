@@ -36,12 +36,29 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'trusktr/seti.vim'
 Plugin 'jisaacks/GitGutter'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'idanarye/vim-vebugger'
+Plugin 'pthrasher/conqueterm-vim'
+Plugin 'nablaa/vim-rainbow-parenthesis'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'peaksea'
+Plugin 'lazywei/vim-matlab'
+Plugin 'fortes/vim-escuro'
+Plugin 'jacoborus/tender.vim'
+Plugin 'connorholyday/vim-snazzy'
+Plugin 'haishanh/night-owl.vim'
+Plugin 'wesgibbs/vim-irblack'
+Plugin 'neutaaaaan/iosvkem'
+Plugin 'ErichDonGubler/vim-sublime-monokai'
+Plugin 'Jimeno0/vim-chito'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()
 
 "Airline Theme
 set laststatus=2
 let g:airline_theme='bubblegum'
-color seti
+"color Iosvkem
+color sublimemonokai
 set smartindent
 
 " Return to last edit position when opening files (You want this!)
@@ -62,8 +79,8 @@ set noundofile
 set noswapfile
 set autoread
 set confirm
-"ConqueGdb
+"ConqueGDB
 let g:ConqueGdb_SrcSplit='above'
 let g:ConqueGdb_SaveHistory=1
-let g:ConqueGdb_Leader=','          ",r run ,c continue ,n next ,s step ,b breakpoint ,d delete ,f finish ,t backtrace
+let g:ConqueGdb_Leader=','          ",r run  ,c  continue ,n next ,s step ,b breakpoint ,d delete ,f finish ,t backtrace
 let g:ConqueTerm_CloseOnEnd=1
