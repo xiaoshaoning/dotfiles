@@ -52,13 +52,15 @@ Plugin 'neutaaaaan/iosvkem'
 Plugin 'ErichDonGubler/vim-sublime-monokai'
 Plugin 'Jimeno0/vim-chito'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'bluz71/vim-moonfly-colors'
 call vundle#end()
 
 "Airline Theme
 set laststatus=2
 let g:airline_theme='bubblegum'
 "color Iosvkem
-color sublimemonokai
+"color sublimemonokai
+color moonfly
 set smartindent
 
 " Return to last edit position when opening files (You want this!)
